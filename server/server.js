@@ -24,7 +24,7 @@ app.get('/', (req, res, next) => {
   res.send('Server is running succesfully')
 })
 
-app.use('/todoList', TodoRoute)
+app.use('/api/todoList', TodoRoute)
 
 // app.get('/getTodoList', (req, res) => {
 //   res.send([{"task":"Setting up database","priority":"High","date":"01/01/1900"},{"task":"Clean room","priority":"High","date":"01/01/2000"}])
