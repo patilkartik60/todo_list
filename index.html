@@ -109,7 +109,7 @@
             let id = document.getElementById("todoId").value;
             formData._id = id; 
             try {
-                const url = "api/todoList/update";
+                const url = "/api/todoList/update";
                 let res =await   fetch(url,{
                 method:"post",
                 headers: {
@@ -127,7 +127,7 @@
         }
         else{
             try {
-            const url = "api/todoList/create";
+            const url = "/api/todoList/create";
             let res =await   fetch(url,{
                 method:"post",
                 headers: {
@@ -145,7 +145,7 @@
         }
     }
     function getTodoData() {
-        const url = "api/todoList/getTodoList";
+        const url = "/api/todoList/getTodoList";
         try {
             fetch(url,{
                 method: "get"
@@ -196,7 +196,7 @@
 
     async function deleteTodo(id){
         try {
-         const url = "api                t/            ve";
+         const url = "/ap                st            ove";
         let res = await   fetch(url,{
             method:"post",
             headers: {
@@ -234,7 +234,7 @@
             "status":status
         }
         try {
-            const url = "api/todoList/update";
+            const url = "/api/todoList/update";
             let res =await   fetch(url,{
             method:"post",
             headers: {
