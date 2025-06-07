@@ -26,7 +26,7 @@ app.use(express.static('.'))
 app.use('/api/todoList', TodoRoute)
 
 // Serve index.html for root route
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'))
 })
 
